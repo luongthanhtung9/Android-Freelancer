@@ -8,5 +8,5 @@ import retrofit2.http.GET
 interface Service {
     //    https://vietlott.vn/services/?securitycode=vietlotcmc&jsondata={"Command":"GetHistory","JsonData":""}
     @GET("/?securitycode=vietlotcmc&jsondata={\"Command\":\"GetHistory\",\"JsonData\":\"\"}")
-    fun getHistory() : Call<List<ResponseData?>>?
+    fun getHistory() : List<ResponseData?>?
 }

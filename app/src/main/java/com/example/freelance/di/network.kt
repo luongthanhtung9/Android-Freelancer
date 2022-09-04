@@ -16,7 +16,7 @@ import javax.net.ssl.SSLSession
 import javax.xml.datatype.DatatypeConstants.SECONDS
 
 val networks = module {
-//    single { createHostname(DatasourceProperties.getDomain()) }
+    single { createHostname(DatasourceProperties.getDomain()) }
 //    single { createCertificatePinner(DatasourceProperties.getDomain()) }
     single { createOkHttpCache(get()) }
     single { createGson() }
@@ -30,7 +30,7 @@ val networks = module {
         )
     }
     single { createMediaType() }
-//    single<Service> { createService(get(named("newOkHttp"))) }
+    single<Service> { createService(get(named("newOkHttp"))) }
 
 }
 

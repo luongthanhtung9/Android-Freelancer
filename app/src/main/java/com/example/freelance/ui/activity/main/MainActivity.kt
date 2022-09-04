@@ -10,6 +10,7 @@ import com.example.freelance.network.remote.MainRemote
 import com.example.freelance.ui.base.BaseActivity
 import com.example.freelance.ui.base.BaseViewModel
 import com.vnpay.merchant.utils.extensions.setSafeOnClickListener
+import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : BaseActivity() {
@@ -19,15 +20,23 @@ class MainActivity : BaseActivity() {
         ActivityMainBinding.inflate(layoutInflater)
     }
 
+    val mainRemote : MainRemote by inject()
+
     override fun initListener() {
         binding.btn.setSafeOnClickListener {
-            viewModel.incrementBadgeCount()
+//            viewModel.incrementBadgeCount()
+            mainRemote.getService().getHistory()
         }
     }
 
     override fun observerLiveData() {
         viewModel.badgeCount.observe(this) {
             binding.txt.text = it.toString()
+        }
+        viewModel.apply {
+            abc.observe(this@MainActivity) {
+                binding.txt.text = it.toString()
+            }
         }
     }
 
