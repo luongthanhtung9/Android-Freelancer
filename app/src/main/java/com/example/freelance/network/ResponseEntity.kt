@@ -16,5 +16,11 @@ abstract class ResponseEntity {
 }
 
 class ResponseData : ResponseEntity(){
+    @SerializedName("HistoryId")
+    val HistoryId: String? = null
+    @SerializedName("HistoryDate")
+    val HistoryDate: String? = null
+    @SerializedName("Subject")
+    val Subject: String? = null
 
 }

@@ -9,6 +9,6 @@ object DatasourceProperties {
     }
 
     fun getUrl(): String {
-        return ""
+        return "https://vietlott.vn/services"
     }
 }
