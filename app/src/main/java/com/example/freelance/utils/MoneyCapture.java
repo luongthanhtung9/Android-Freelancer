@@ -6,7 +6,6 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.widget.EditText;
 
-import com.vnpay.merchant.utils.Utils;
 
 public class MoneyCapture implements TextWatcher {
     private String currency = "";

@@ -1,9 +1,8 @@
-package com.vnpay.merchant.networks
+package com.example.freelance.network
 
 import android.text.TextUtils
+import com.example.freelance.utils.Utils
 import com.google.gson.annotations.SerializedName
-import com.vnpay.merchant.networks.entities.ResponseEntity
-import com.vnpay.merchant.utils.Utils
 import retrofit2.HttpException
 import retrofit2.Response
 import java.io.IOException

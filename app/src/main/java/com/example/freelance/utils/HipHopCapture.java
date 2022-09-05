@@ -8,7 +8,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
 
-import com.vnpay.merchant.utils.Utils;
 
 import java.util.regex.Pattern;
 

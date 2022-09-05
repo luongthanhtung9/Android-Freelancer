@@ -1,12 +1,12 @@
 package com.example.freelance.data
 
-import com.vnpay.merchant.networks.entities.ResponseData
-import retrofit2.Call
-import retrofit2.http.GET
 
+import com.example.freelance.network.ResponseData
+import retrofit2.http.*
 
 interface Service {
-    //    https://vietlott.vn/services/?securitycode=vietlotcmc&jsondata={"Command":"GetHistory","JsonData":""}
-    @GET("/?securitycode=vietlotcmc&jsondata={\"Command\":\"GetHistory\",\"JsonData\":\"\"}")
-    fun getHistory() : List<ResponseData?>?
+
+    @GET("api/breeds/image/random")
+    suspend fun login() : ResponseData
+
 }

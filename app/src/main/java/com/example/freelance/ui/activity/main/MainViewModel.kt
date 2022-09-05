@@ -3,9 +3,8 @@ package com.example.freelance.ui.activity.main
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.freelance.data.impl.HomeRepo
+import com.example.freelance.network.ResponseData
 import com.example.freelance.ui.base.BaseViewModel
-import com.vnpay.merchant.networks.entities.ResponseData
-import com.vnpay.merchant.utils.Utils
 
 class MainViewModel(val homeRepo: HomeRepo): BaseViewModel() {
     private val _badgeCount = MutableLiveData<Int>()
@@ -20,9 +19,9 @@ class MainViewModel(val homeRepo: HomeRepo): BaseViewModel() {
     }
 
     fun getHistory() = launch {
-        val response = homeRepo.getHistory()
+        val response = homeRepo.login()
         response?.let {
-            abc.postValue(response)
+
         }
     }
 }

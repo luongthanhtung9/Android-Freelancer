@@ -1,10 +1,10 @@
-package com.vnpay.merchant.ui.recyclerview
+package com.example.freelance.ui.recycler_view
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.vnpay.merchant.utils.Utils
+import com.example.freelance.utils.Utils
 
 abstract class BaseRclvAdapter: RecyclerView.Adapter<BaseRclvVH<Any?>>() {
     protected var mDataSet = mutableListOf<Any?>()

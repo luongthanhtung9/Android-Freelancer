@@ -1,4 +1,5 @@
-package com.vnpay.merchant.networks.entities
+package com.example.freelance.network
+
 import com.google.gson.annotations.SerializedName
 
 abstract class ResponseEntity {
@@ -15,12 +16,9 @@ abstract class ResponseEntity {
     }
 }
 
-class ResponseData : ResponseEntity(){
-    @SerializedName("HistoryId")
-    val HistoryId: String? = null
-    @SerializedName("HistoryDate")
-    val HistoryDate: String? = null
-    @SerializedName("Subject")
-    val Subject: String? = null
-
-}
+data class ResponseData(
+    @SerializedName("message")
+    val message: String?,
+    @SerializedName("status")
+    val status: String?
+)

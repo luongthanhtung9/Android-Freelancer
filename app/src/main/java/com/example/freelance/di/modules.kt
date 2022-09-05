@@ -1,5 +1,6 @@
 package com.example.freelance.di
 
+
 import com.example.freelance.data.impl.HomeRepo
 import com.example.freelance.data.impl.HomeRepoImpl
 import com.example.freelance.ui.activity.main.MainViewModel
@@ -13,12 +14,10 @@ val models = module {
 }
 
 val impls = module {
-
     single<HomeRepo> {
-        HomeRepoImpl(
-            get()
-        )
+        HomeRepoImpl(get())
     }
+
 }
 
 val utilities = module {

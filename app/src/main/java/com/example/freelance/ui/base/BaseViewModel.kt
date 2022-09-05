@@ -5,8 +5,8 @@ import androidx.annotation.CallSuper
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.vnpay.merchant.networks.ServerResponseEntity
-import com.vnpay.merchant.networks.convertToBaseException
+import com.example.freelance.network.ServerResponseEntity
+import com.example.freelance.network.convertToBaseException
 import kotlinx.coroutines.*
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException

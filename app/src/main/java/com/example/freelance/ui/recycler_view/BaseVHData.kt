@@ -1,4 +1,4 @@
-package com.vnpay.merchant.ui.recyclerview
+package com.example.freelance.ui.recycler_view
 
 open class BaseVHData<T>(data: T) {
     var type = 0

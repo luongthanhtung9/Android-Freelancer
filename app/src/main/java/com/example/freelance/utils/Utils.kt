@@ -1,4 +1,4 @@
-package com.vnpay.merchant.utils
+package com.example.freelance.utils
 
 import android.annotation.TargetApi
 import android.app.KeyguardManager

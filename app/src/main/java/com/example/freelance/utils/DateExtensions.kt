@@ -1,4 +1,4 @@
-package com.vnpay.merchant.utils.extensions
+package com.example.freelance.utils
 
 import java.text.SimpleDateFormat
 import java.util.*

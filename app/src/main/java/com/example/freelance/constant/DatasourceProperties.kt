@@ -5,10 +5,10 @@ object DatasourceProperties {
    const val TIMEOUT_CONNECT: Long = 60000L
 
     fun getDomain(): String {
-        return "vietlott.vn"
+        return "dog.ceo"
     }
 
     fun getUrl(): String {
-        return "https://vietlott.vn/services"
+        return "https://dog.ceo/"
     }
 }

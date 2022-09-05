@@ -1,4 +1,4 @@
-package com.vnpay.merchant.utils.extensions
+package com.example.freelance.utils
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -15,7 +15,6 @@ import androidx.annotation.DrawableRes
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
-import com.vnpay.merchant.utils.Utils
 import org.json.JSONObject
 import java.math.BigDecimal
 

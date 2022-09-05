@@ -1,8 +1,8 @@
-package com.vnpay.merchant.ui.recyclerview
+package com.example.freelance.ui.recycler_view
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import com.vnpay.merchant.utils.extensions.setSafeOnClickListener
+import com.example.freelance.utils.setSafeOnClickListener
 
 abstract class BaseRclvVH<T>(itemView: View) : RecyclerView.ViewHolder(itemView), IOnBind<T> {
 
